@@ -8,6 +8,6 @@ app.use(function(err, req, res, next) {
   res.status(500).json({success:false, data:'internal server error'});
 });
 
-var port = 1111;
+var port = process.env.PORT || 1111;
 app.listen(port);
 console.log('server running at port - ' + port);
