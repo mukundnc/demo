@@ -9,16 +9,17 @@
   },
   "license": "MIT",
   "dependencies": {
+    "express": "^4.13.3",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
-    "grunt-ng-constant": "^0.5.0",    
-    "http-server": "^0.6.1",    
+    "grunt-ng-constant": "^0.5.0",
+    "http-server": "^0.6.1",
     "shelljs": "^0.2.6",
-    "timeago": "~0.1.0"    
+    "timeago": "~0.1.0"
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "http-server -p 8000",
+    "start": "node server.js",
     "pretest": "npm install",
     "test": "karma start test/karma.conf.js",
     "test-single-run": "karma start test/karma.conf.js  --single-run",
